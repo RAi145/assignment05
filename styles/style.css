@@ -3,7 +3,7 @@
       margin: 0;
       background: #e6f3e3;
     }
-    /* img sec */
+
     .heart{
         height: 20px;
     }
@@ -11,11 +11,11 @@
         height: 50px;
     }
     .special{
-        /* background-color: #d1cdcd; */
+        
         height: 10%;
         width: 10%;
         border-radius: 15px;
-        /* text-align: center; */
+       
         padding: 0%;
     }
     .card-head-pic{
@@ -31,7 +31,7 @@
         width: 30px;
         
     }
-    /* Top Bar */
+  
     .top-bar {
       display: flex;
       justify-content: space-between;
@@ -77,7 +77,7 @@
       color: #fff;
     }
 
-    /* Header Banner */
+   
     .header {
       background: linear-gradient(to right, #004c2e, #006f43);
       text-align: center;
@@ -95,7 +95,7 @@
       opacity: 0.9;
     }
 
-    /* Main Layout */
+   
     .main {
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -105,7 +105,7 @@
       padding: 20px;
     }
 
-    /* Cards Section */
+   
     .container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -139,6 +139,8 @@
       color: #000;
     }
 
+
+
     .btn {
       padding: 8px 16px;
       border-radius: 6px;
@@ -159,9 +161,9 @@
       width: 110px
     }
 
-    /* Sidebar */
+    Sidebar
     .sidebar {
-      background: #fff;
+      background: #727272;
       padding: 15px;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.1);

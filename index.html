@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    
+  
 
   <!-- Top Bar -->
   <div class="top-bar">
@@ -17,8 +19,10 @@
     </div>
     <div class="top-icons">
       <div class="item">0<img class="heart" src="assets/heart.png" alt=""></div>
-      <div class="item">0 <img class="heart" src="assets/coin.png" alt=""></div>
-      <button class="item green"> 2 Copy</button>
+
+       <div class="item"><span id="coinCount">100</span> <img class="heart" src="assets/coin.png" alt=""></div>
+       
+      <button class="item green" >0 Copy</button>
     </div>
   </div>
 
@@ -36,23 +40,30 @@
     <div class="container">
 
       <div class="card">
-      <div class="card-head-pic"><img class="all-img" src="assets/emergency.png" alt=""></div>
+         <div class="fav-heart">
+         <div class="card-head-pic"><img class="all-img" src="assets/emergency.png" alt=""></div>  
+         <div class="fav">
+        
+         </div>
+         </div>
         <h3>National Emergency Number</h3>
         <p>National Emergency</p>
         <div class="number">999</div>
         <div class="special"> All</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
-      </div>
+         <button onclick="makeCall('Fire Service','999')" class="btn btn-call">Call</button>
+       </div>
       
       <div class="card">
-      <div class="card-head-pic"><img class="all-img" src="assets/police.png" alt=""></div>
+      <div class="card-head-pic"><img class="all-img" src="assets/police.png" alt="">
+      
+      </div>
         <h3>Police Helpline Number</h3>
         <p>Police</p>
         <div class="number">999</div>
         <div class="special"> police</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"   class="btn btn-call">Call</button>
       </div>     
       
       <div class="card">
@@ -62,7 +73,7 @@
         <div class="number">999</div>
         <div class="special"> Fire</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
       </div> 
       
       <div class="card">
@@ -72,7 +83,7 @@
         <div class="number">999</div>
         <div class="special"> Health</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
       </div>     
       
       <div class="card">
@@ -82,7 +93,7 @@
         <div class="number">999</div>
         <div class="special">Help</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
         </div>     
         
         <div class="card">
@@ -92,7 +103,7 @@
         <div class="number">999</div>
         <div class="special"> Govt.</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
        </div>
 
       <div class="card">
@@ -102,7 +113,7 @@
         <div class="number">999</div>
         <div class="special"> Electricity</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
       </div>     
       
       <div class="card">
@@ -112,7 +123,7 @@
         <div class="number">999</div>
         <div class="special"> NGO</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
       </div>     
       
       <div class="card">
@@ -122,18 +133,23 @@
         <div class="number">999</div>
         <div class="special"> Travel</div>
         <button class="btn btn-copy">Copy</button>
-        <button class="btn btn-call">Call</button>
+        <button onclick="makeCall('Fire Service','999')"  class="btn btn-call">Call</button>
       </div>
 
       
     </div>
 
-    <!-- Sidebar -->
+
     <div class="sidebar">
-      <h3> Call History <button class="clear-btn">Clear</button>
-      </h3>
-     
-  </div>
+      <h3> Call History <button class="clear-btn">Clear</button></h3>
+      <div id="callHistory"></div>
+    </div >
+    </div>
+
+ 
+ </body> 
+
+<script src="./function/script.js"></script>
 
 </body>
 </html>
